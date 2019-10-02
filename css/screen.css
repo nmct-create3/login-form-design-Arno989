@@ -37,6 +37,10 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #f5f6fa;
+	/* min-height:100%; */
+}
+
+body{
 }
 
 *,
@@ -208,6 +212,9 @@ input {
 
 .o-row--login {
 	/* stuff here to align the card */
+	min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 /* size modifiers */
@@ -510,6 +517,7 @@ input {
 	margin: 24px 0;
 	font-size: 14px;
 	line-height: 14px;
+	color: #757787;
 }
 
 /*
@@ -518,19 +526,23 @@ input {
     Everything form related here
 */
 
-.form-field {
+.c-form-field {
 }
 
 
 
-.form-field a {
+.c-form-field a {
 	font-size: 14px;
 }
 
-.form-field__option {
+.c-form-field__option {
 	display: flex;
 	align-items: center;
 }
+
+
+
+
 
 /*
     Component: Input
@@ -571,6 +583,10 @@ input {
     line-height: 16px;
     margin-bottom: 8px;
     color: #606274;
+}
+
+.c-label__option {
+    margin-left: 8px;
 }
 
 input[type="checkbox"].c-label {
